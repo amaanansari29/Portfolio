@@ -1,0 +1,533 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #005bb5;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #003d80;
+}
+
+/* Home Section with Background Image */
+#home {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e393ecaf-7c7e-48b0-ab66-b2a4dca3e8fb/d3kqjzk-c7774686-64a9-40d8-978c-c38c5e832331.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UzOTNlY2FmLTdjN2UtNDhiMC1hYjY2LWIyYTRkY2EzZThmYlwvZDNrcWp6ay1jNzc3NDY4Ni02NGE5LTQwZDgtOTc4Yy1jMzhjNWU4MzIzMzEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HKN-CabfGibspeFvozyt5yMhcnWIe4GFIOAmqE6GXIs');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+/* Section Styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Box Styling */
+.content-box {
+    background-color: #e6f7ff;
+    border: 1px solid #0073e6;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.content-box h2, .content-box h3, .content-box h4 {
+    color: #005bb5;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+}
+
+.content-box ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.content-box ul li {
+    margin-bottom: 10px;
+}
+
+/* Skills Progress Bar Styles */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin-bottom: 5px;
+}
+
+.progress {
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #0073e6;
+    height: 20px;
+    border-radius: 20px;
+    transition: width 0.3s;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0073e6;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Link Styles */
+a {
+    color: #0073e6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    #home h2 {
+        font-size: 2em;
+    }
+
+    #home p {
+        font-size: 1em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .content-box {
+        padding: 15px;
+    }
+
+    .skill p {
+        font-size: 1em;
+    }
+
+    .progress-bar {
+        height: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #home {
+        padding: 80px 10px;
+    }
+
+    #home h2 {
+        font-size: 1.8em;
+    }
+
+    #home p {
+        font-size: 0.9em;
+    }
+
+    section {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .content-box {
+        padding: 10px;
+    }
+
+    .skill p {
+        font-size: 0.9em;
+    }
+
+    .progress-bar {
+        height: 10px;
+    }
+}
+/* Header Styles */
+header {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the profile picture circular */
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #005bb5;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #003d80;
+}
+/* Projects Section Styles */
+.project-item {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #f4f4f4; /* Light gray background for project items */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-item img {
+    width: 150px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.project-info {
+    padding: 15px;
+    flex: 1;
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    margin-bottom: 0;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #005bb5;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #003d80;
+}
+
+/* Home Section with Background Image */
+#home {
+    background-image: url('images/Cube2.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+/* Section Styles */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    margin-bottom: 20px;
+}
+
+/* Skills Progress Bar Styles */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin-bottom: 5px;
+}
+
+.progress {
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #0073e6;
+    height: 20px;
+    border-radius: 20px;
+    transition: width 0.3s;
+}
+/* Education Section Box */
+.education-box {
+    background-color: #e6f7ff; /* Light blue background */
+    border: 1px solid #0073e6; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Space above the box */
+}
+
+.education-box h3 {
+    color: #005bb5; /* Darker blue for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.education-box p {
+    margin-bottom: 15px; /* Space below the paragraph */
+}
+
+.education-box ul {
+    list-style: disc; /* Bullet points for the list */
+    margin-left: 20px; /* Space for bullet points */
+}
+
+.education-box ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+/* Content Box Styling */
+.content-box {
+    background-color: #e6f7ff; /* Light blue background */
+    border: 1px solid #0073e6; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space above and below the box */
+}
+
+.content-box h2 {
+    color: #005bb5; /* Darker blue for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.content-box h3 {
+    color: #005bb5; /* Darker blue for sub-headings */
+    margin-bottom: 10px; /* Space below the sub-heading */
+}
+
+.content-box p {
+    margin-bottom: 15px; /* Space below the paragraph */
+}
+
+.content-box ul {
+    list-style: disc; /* Bullet points for the list */
+    margin-left: 20px; /* Space for bullet points */
+}
+
+.content-box ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Skills Progress Bar Styles (Retain from previous CSS) */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin-bottom: 5px;
+}
+
+.progress {
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #0073e6;
+    height: 20px;
+    border-radius: 20px;
+    transition: width 0.3s;
+}
+/* Education Section Box */
+.content-box {
+    background-color: #e6f7ff; /* Light blue background */
+    border: 1px solid #0073e6; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space above and below the box */
+}
+
+/* Individual Education Details */
+.education-detail {
+    background-color: #ffffff; /* White background for individual details */
+    border: 1px solid #0073e6; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside each detail box */
+    margin-bottom: 15px; /* Space between details */
+}
+
+.education-detail h3, .education-detail h4 {
+    color: #005bb5; /* Darker blue for headings */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.education-detail p {
+    margin: 0; /* Remove margin for paragraph inside detail box */
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #0073e6;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Link Styles */
+a {
+    color: #0073e6;
+}
+
+a:hover {
+    text-decoration: underline;
+}
